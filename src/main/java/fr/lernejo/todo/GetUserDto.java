@@ -1,4 +1,7 @@
 package fr.lernejo.todo;
 
-public class GetUserDto {
+import java.time.Instant;
+import java.util.UUID;
+
+public record GetUserDto(String email, Instant created_at, UUID uuid) {
 }
